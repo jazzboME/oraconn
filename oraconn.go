@@ -15,7 +15,7 @@ func Do(vars ...string) (string, error) {
 
 	configName := "database"
 	if len(vars) >= 1 {
-		configName = vars[1]
+		configName = vars[0]
 	}
 
 	// read configuration for database
